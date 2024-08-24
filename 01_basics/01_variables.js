@@ -1,3 +1,9 @@
+/* 
+Var = Funciotnal Scope Element
+Const = Block Scope Element
+Let = Block Scope Element
+*/
+
 const umair = "name1";
 var shoaib = "name2";
 let idrees = "name3";
