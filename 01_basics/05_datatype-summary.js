@@ -34,3 +34,26 @@ const myFunction = function () {
   console.log(typeof myFunction);
 };
 myFunction();
+
+//**************************************************
+
+//STack (Primitive), Heap(Reference/Non Primitive)
+
+//Stack  This is Static Memory Allocation(they create copy and value will be change)
+let myName = "Umair";
+let myFullName = myName;
+
+myFullName = "umair-idrees";
+console.log(myName);
+console.log(myFullName);
+
+//Heap  This is Dynamic Memory Allocation (don't create copy just do by reference)
+let userOne = {
+  email: "umair@google.com",
+  name: "umair",
+};
+let userTwo = userOne;
+
+userTwo.email = "newumair@google.com";
+console.log(userOne);
+console.log(userTwo);
