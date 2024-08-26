@@ -35,7 +35,7 @@ let obj2 = {
 // const object3=Object.assign(obj1,obj2);
 
 const obj3 = { ...obj1, ...obj2 };
-console.log(obj3);
+// console.log(obj3);
 
 const newObject = [
   {
@@ -68,5 +68,36 @@ const returnedTarget = Object.assign(target, source);
 // console.log(target);
 // Expected output: Object { a: 1, b: 4, c: 5 }
 
-console.log(returnedTarget === target);
+// console.log(returnedTarget === target);
 // Expected output: true
+
+
+
+
+// **************************de-Structuring of Object ************************
+
+let course={
+    name:"learn JS",
+    courseName:"JS",
+    courseInstructor:"umair"
+}
+console.log(course.courseInstructor);
+
+const {courseInstructor:ins}=course
+console.log("deStructure courseInstructor : " ,ins );
+
+
+//*****************API******************************************* */
+//we can decalre through objects and as well as arrays
+
+{
+    "name":"umair"
+    "class":"BSCS",
+    "rollNo":"5127"
+}
+//Or it can be:
+
+[
+    {},
+    {},
+]
