@@ -52,10 +52,21 @@ const newObject = [
   },
 ];
 
-console.log(newObject[1]);
-console.log(newObject[1].class);
+// console.log(newObject[1]);
+// console.log(newObject[1].class);
 
-console.log((Object.keys(tinderObject)));
-console.log((Object.values(tinderObject)));
-console.log((Object.entries(tinderObject))); //it will make array sperately 
+// console.log((Object.keys(tinderObject)));
+// console.log((Object.values(tinderObject)));
+// console.log((Object.entries(tinderObject))); //it will make array sperately 
 
+const target = { a: 1, b: 2 };
+const source = { b: 4, c: 5 };
+// console.log(target);
+
+const returnedTarget = Object.assign(target, source);
+
+// console.log(target);
+// Expected output: Object { a: 1, b: 4, c: 5 }
+
+console.log(returnedTarget === target);
+// Expected output: true
