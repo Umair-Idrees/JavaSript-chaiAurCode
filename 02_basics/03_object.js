@@ -90,11 +90,11 @@ console.log("deStructure courseInstructor : " ,ins );
 //*****************API******************************************* */
 //we can decalre through objects and as well as arrays
 
-{
-    "name":"umair"
-    "class":"BSCS",
-    "rollNo":"5127"
-}
+// {
+//     "name":"umair"
+//     "class":"BSCS",
+//     "rollNo":"5127"
+// }
 //Or it can be:
 
 [
